@@ -19,3 +19,11 @@ int main() {
     cin>>n;
     cout<<LIS(n)<<endl;
 }
+//in
+
+//7
+//2 5 3 4 1 7 6
+
+//out
+
+//4
