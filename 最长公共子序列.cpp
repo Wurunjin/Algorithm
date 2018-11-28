@@ -24,7 +24,7 @@ int LIS_02(int n){
             dp[++len]=v[i];
         }else{
             int j=lower_bound(dp+1,dp+len+1,v[i])-dp;
-                    dp[j]=v[i];
+            dp[j]=v[i];
         }
     }
     return len;
@@ -33,7 +33,7 @@ int main() {
     int n;
     cin>>n;
     cout<<LIS_01(n)<<endl;
-    cout<<LIS_o2(n)<<endl;
+    //cout<<LIS_02(n)<<endl;
 }
 //我们可以通过二分查找中改变“上确界”和“下确界”，以及符号（“<”和“<=”或“>”、“>=”等），求出最长不下降、不上升、严格下降子序列等问题。
 
