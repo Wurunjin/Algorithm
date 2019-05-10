@@ -13,7 +13,9 @@ bool Top_Sort() {
     for (int i = 1; i <= n; i++)
         for (int j = 0; j < g[i].size(); j++)
             du[g[i][j]]++;
-    priority_queue<int, vector<int>, less<int> > q;//也可以priority_queue<int, vector<int>, greater<int> > q or queue<int>q...;
+    priority_queue<int, vector<int>, less<int> > q;
+    //也可以priority_queue<int, vector<int>, greater<int> > q or queue<int>q...;
+    // 当是q是queue时 q.top()->q.front();
     for (int i = 1; i <= n; i++)
         if (!du[i])
             q.push(i);
